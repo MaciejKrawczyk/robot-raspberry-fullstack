@@ -14,7 +14,7 @@ def get_commands():
     session = Session()
     head = session.query(Command).filter(Command.previous_id.is_(None)).first()
     if head is None:
-        return jsonify({'commands': []}), 200
+        return jsonify([]), 200
     commands = []
     current = head
     while current is not None:
