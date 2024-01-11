@@ -1,16 +1,22 @@
 <template>
 
-  <position-manual-setting name="theta1" :value="theta1"/>
+  <div class="flex mt-5">
+    <div>
+      <position-manual-setting name="theta1" :value="theta1"/>
 
-  <position-manual-setting name="theta2" :value="theta2"/>
+      <position-manual-setting name="theta2" :value="theta2"/>
 
-  <position-manual-setting name="theta3" :value="theta3"/>
+      <position-manual-setting name="theta3" :value="theta3"/>
+    </div>
 
-  <position-manual-setting name="x" value="0"/>
+    <div>
+      <position-manual-setting name="x" value="0"/>
 
-  <position-manual-setting name="y" value="0"/>
+      <position-manual-setting name="y" value="0"/>
 
-  <position-manual-setting name="z" value="0"/>
+      <position-manual-setting name="z" value="0"/>
+    </div>
+  </div>
 
   <button
       type="button"
